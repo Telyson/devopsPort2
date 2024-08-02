@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  portdevops1:
+    build:
+      context: .
+      dockerfile: Dockerfile 
+    ports:
+      - '5173:5173'
+    stdin_open: true
+    tty: true
+    environment:
+      - DEBUG=true
+    image: telyson/portdevops1:0.0.7
