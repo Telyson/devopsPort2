@@ -10,4 +10,4 @@ services:
     tty: true
     environment:
       - DEBUG=true
-    image: telyson/portdevops1:0.0.7
+    image: telyson/portdevops1:0.0.9
